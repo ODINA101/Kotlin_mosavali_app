@@ -10,6 +10,7 @@ import android.support.v4.app.ActivityOptionsCompat
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,12 +20,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        var regbtn = findViewById<Button>(R.id.main_regbtn)
 
-        var main_email = findViewById<EditText>(R.id.main_email)
-        regbtn.setOnClickListener({
-            var reg = Intent(this,RegActivity::class.java)
-            var options = ActivityOptionsCompat.makeSceneTransitionAnimation(Activity(),main_email,"sharedINP")
+
+        var main_number = findViewById<EditText>(R.id.main_nomeri)
+
+
+        main_regbtn.setOnClickListener({
+            val reg = Intent(this,RegActivity::class.java)
+            val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this,main_number,"sharedINP")
              startActivity(reg,options.toBundle())
         })
     }

@@ -10,13 +10,15 @@
     <Button
         android:id="@+id/button"
         android:layout_width="130dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/btn_shape"
-        android:text="ავტორიზაცია"
+        android:background="@drawable/reg_btn_shape"
+        android:backgroundTint="@android:color/background_light"
+        android:text="შესვლა"
+        android:textColor="@android:color/background_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,40 +33,44 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/reg_btn_shape"
+        android:background="@drawable/regbtnshape"
         android:backgroundTint="#FFF"
         android:text="რეგისტრაცია"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.110000014" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/main_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/main_nomeri"
+        android:layout_width="250dp"
+        android:layout_height="47dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:hint="ელ-ფოსტა"
-        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawableLeft="@drawable/ic_call_black_24dp"
         android:drawablePadding="7dp"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:ems="10"
+        android:hint="მობილურის ნომერი"
+        android:inputType="phone"
+
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:transitionName="sharedINP"/>
+        app:layout_constraintVertical_bias="0.9" />
+
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="260dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -76,6 +82,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_email"
-        app:layout_constraintVertical_bias="0.100000024" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
 </android.support.constraint.ConstraintLayout>
