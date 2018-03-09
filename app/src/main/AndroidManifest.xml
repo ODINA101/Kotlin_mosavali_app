@@ -18,9 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegActivity" android:theme="@style/Theme.AppCompat.NoActionBar" >
-
-        </activity>
+        <activity android:name=".RegActivity"></activity>
     </application>
 
 </manifest>
