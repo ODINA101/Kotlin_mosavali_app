@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2ecc71">
+    android:background="#2ecc71"
+    android:id="@+id/mregCon">
 
     <Button
         android:id="@+id/dastruribtn"
@@ -16,17 +17,17 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/reg_btn_shape"
         android:backgroundTint="#FFF"
+        android:foreground="?attr/selectableItemBackground"
         android:text="დადასტურება"
-
         android:textColor="@android:color/background_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
-        app:layout_constraintVertical_bias="0.14999998" />
+        app:layout_constraintTop_toBottomOf="@+id/paroli"
+        app:layout_constraintVertical_bias="0.6" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/paroli"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -38,15 +39,16 @@
         android:ems="10"
         android:hint="პაროლი"
         android:inputType="textPassword"
+        android:textColor="#FFF"
         android:transitionName="sharedINP"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintVertical_bias="0.7" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/reg_name"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -67,7 +69,7 @@
         app:layout_constraintVertical_bias="0.13" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/raioni"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -78,33 +80,34 @@
         android:ems="10"
         android:hint="რაიონი/სოფელი"
         android:inputType="textPersonName"
+        android:textColor="#FFF"
         android:transitionName="sharedINP"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toTopOf="@+id/paroli"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintTop_toBottomOf="@+id/reg_number" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/reg_number"
         android:layout_width="250dp"
-        android:layout_height="47dp"
+        android:layout_height="43dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:drawableLeft="@drawable/ic_call_black_24dp"
+        android:drawablePadding="7dp"
         android:ems="10"
         android:hint="მობილურის ნომერი"
         android:inputType="phone"
         android:textColor="#FFF"
-        android:drawablePadding="7dp"
 
         android:transitionName="sharedINP"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toTopOf="@+id/paroli"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/reg_name"
         app:layout_constraintVertical_bias="0.19999999" />
 
     <ImageButton
@@ -123,6 +126,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
 </android.support.constraint.ConstraintLayout>
 
 

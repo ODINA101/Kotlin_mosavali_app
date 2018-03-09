@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Kotlin_mosavali_app.iml" filepath="$PROJECT_DIR$/Kotlin_mosavali_app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mosavali.iml" filepath="$PROJECT_DIR$/mosavali.iml" />
+      <module fileurl="file://C:\Users\Teacher\Desktop\forum\Kotlin_mosavali_app\mosavali.iml" filepath="C:\Users\Teacher\Desktop\forum\Kotlin_mosavali_app\mosavali.iml" />
     </modules>
   </component>
 </project>

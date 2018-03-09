@@ -23,7 +23,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68" />
+        app:layout_constraintVertical_bias="0.85" />
 
     <Button
         android:id="@+id/main_regbtn"
@@ -59,7 +59,7 @@
         android:inputType="phone"
 
         android:textColor="#FFF"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toTopOf="@+id/paroli"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -67,7 +67,7 @@
 
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/paroli"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="260dp"

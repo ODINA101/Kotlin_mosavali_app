@@ -18,7 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegActivity"></activity>
+        <activity
+            android:name=".RegActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".homeActivity"></activity>
     </application>
 
 </manifest>
